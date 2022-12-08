@@ -1,0 +1,66 @@
+* tutorial to go through gatsby
+
+** prepare
+
+*** install gatby-cli
+
+#+begin_src bash
+  npm install -g gatsby-cli
+#+end_src
+
+verify install
+
+#+begin_src bash
+  gatsby --version
+  gatsby --help
+#+end_src
+
+*** create gatsby site
+
+#+begin_src bash
+  gatsby new
+#+end_src
+
+*** update content
+  define page
+
+  use <Link to/>
+
+  add <Layout> component
+
+  add css-component style
+
+*** add plugin
+
+  view plugin registry [[https://www.gatsbyjs.com/plugins][gatsby plugin library]] 
+
+ 
+**** install plugin and configure and use
+
+#+begin_src bash
+  npm install gatsby-plugin-image gatsby-plugin-sharp gatsby-source-filesystem
+#+end_src
+
+    update gatsby-config.js and use plugin component
+
+    build query may hangs, try proxy
+
+*** query for data with Graphql
+
+   use http://localhost:8000/__graphiql
+
+   useStaticQuery and graphql to pull source data
+
+   add Seo Component
+
+   define page Query and insert data into component
+  
+*** transform data to use mdx 
+
+    transfer plugin/source plugin/component plugin/remark plugin
+
+    add mdx plugin. mdx filetype
+
+*** create page programmatically from data
+
+    filesystem route api
